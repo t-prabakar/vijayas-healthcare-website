@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vijayas Healthcare & Medicals — Homoeopathy Pharmacy, Nagercoil</title>
+<meta name="description" content="Vijayas Healthcare & Medicals is a homoeopathy pharmacy in Nagercoil stocking Schwabe, SBL, Allen and Similia medicines — dilutions, mother tinctures, biochemics and more.">
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    --ink:#1c2b26;
+    --ink-soft:#4a5a55;
+    --bg:#faf9f5;
+    --panel:#ffffff;
+    --line:#e3e0d6;
+    --brand:#1f6f54;
+    --brand-dark:#154f3c;
+    --brand-tint:#e9f3ee;
+    --accent:#c98a3a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#eef1ef;
+      --ink-soft:#b7c2bd;
+      --bg:#121613;
+      --panel:#1a201c;
+      --line:#2b332e;
+      --brand:#4fae8a;
+      --brand-dark:#7cc9ab;
+      --brand-tint:#1c2822;
+      --accent:#e0a75e;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+  }
+  a{color:var(--brand-dark);}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px;}
+
+  header.site{
+    border-bottom:1px solid var(--line);
+    background:var(--panel);
+    position:sticky;top:0;z-index:10;
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 20px;max-width:960px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;min-width:0;}
+  .brand-mark{
+    width:34px;height:34px;border-radius:8px;background:var(--brand);
+    color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:800;flex-shrink:0;
+  }
+  .brand-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .nav-links{display:flex;gap:22px;font-size:0.92rem;flex-shrink:0;}
+  .nav-links a{text-decoration:none;color:var(--ink-soft);white-space:nowrap;}
+  .nav-links a:hover{color:var(--brand-dark);}
+  .call-btn{
+    background:var(--brand);color:#fff;padding:8px 16px;border-radius:20px;
+    text-decoration:none;font-size:0.9rem;font-weight:600;white-space:nowrap;flex-shrink:0;
+  }
+  .call-btn:hover{background:var(--brand-dark);}
+  @media(max-width:640px){
+    .nav-links{display:none;}
+    .brand{font-size:0.95rem;}
+    .call-btn{padding:8px 14px;font-size:0.85rem;}
+  }
+
+  .hero{
+    background:linear-gradient(180deg,var(--brand-tint),var(--bg));
+    padding:56px 0 48px;
+  }
+  .hero h1{
+    font-size:clamp(1.7rem,4vw,2.5rem);
+    margin:0 0 14px;
+    color:var(--ink);
+    max-width:16ch;
+  }
+  .hero p.lede{
+    font-size:1.05rem;color:var(--ink-soft);max-width:52ch;margin:0 0 24px;
+  }
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--brand);color:#fff;padding:12px 22px;border-radius:8px;
+    text-decoration:none;font-weight:600;font-size:0.95rem;
+  }
+  .btn-primary:hover{background:var(--brand-dark);}
+  .btn-secondary{
+    background:transparent;color:var(--ink);padding:12px 22px;border-radius:8px;
+    text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid var(--line);
+  }
+  .btn-secondary:hover{border-color:var(--brand);}
+
+  section{padding:44px 0;border-top:1px solid var(--line);}
+  section h2{font-size:1.4rem;margin:0 0 8px;}
+  section .section-lede{color:var(--ink-soft);margin:0 0 28px;max-width:60ch;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;
+  }
+  .card h3{margin:0 0 6px;font-size:1rem;}
+  .card p{margin:0;color:var(--ink-soft);font-size:0.92rem;}
+
+  .brands{display:flex;flex-wrap:wrap;gap:12px;}
+  .brand-chip{
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;
+    padding:10px 18px;font-weight:600;font-size:0.92rem;
+  }
+
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:640px){.contact-grid{grid-template-columns:1fr 1fr;}}
+  .contact-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;
+  }
+  .contact-card h3{margin:0 0 12px;font-size:1rem;}
+  .contact-row{display:flex;gap:10px;margin-bottom:10px;font-size:0.95rem;}
+  .contact-row .k{color:var(--ink-soft);min-width:70px;flex-shrink:0;}
+  .contact-row a{font-weight:600;}
+  .note{
+    font-size:0.85rem;color:var(--ink-soft);background:var(--brand-tint);
+    border-radius:8px;padding:10px 14px;margin-top:14px;
+  }
+
+  footer{
+    border-top:1px solid var(--line);padding:28px 0 36px;font-size:0.82rem;color:var(--ink-soft);
+  }
+  footer .legal{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px;}
+  footer .legal span{white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Vijayas Healthcare &amp; Medicals</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#stock">What we stock</a>
+      <a href="#brands">Brands</a>
+    </nav>
+    <a class="call-btn" href="tel:+916380816260">Call the pharmacy</a>
+  </div>
+</header>
+
+<div id="top" class="hero">
+  <div class="wrap">
+    <h1>Homoeopathy medicines, dispensed carefully, in Nagercoil.</h1>
+    <p class="lede">
+      Vijayas Healthcare &amp; Medicals stocks classical homoeopathic dilutions,
+      mother tinctures, biochemics and proprietary formulations from established makers —
+      for patients dispensing a doctor's prescription or asking for a remedy by name.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="tel:+916380816260">Call the pharmacy</a>
+      <a class="btn-secondary" href="https://www.google.com/maps/search/?api=1&query=24+A+West+Car+Street%2C+Nagercoil+629001" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About the pharmacy</h2>
+    <p class="section-lede">
+      A GST-registered homoeopathy pharmacy in Nagercoil, Tamil Nadu, run under proprietor
+      B.T. Suresh Kumar. We carry both single remedies and combination formulations, sourced
+      from established Indian and international homoeopathic manufacturers.
+    </p>
+  </div>
+</section>
+
+<section id="stock">
+  <div class="wrap">
+    <h2>What we stock</h2>
+    <p class="section-lede">Across potencies and pack sizes, for prescriptions and self-selected remedies alike.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Dilutions</h3>
+        <p>Classical potentised remedies across the common CH and X scales, in the usual bottle sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Mother tinctures</h3>
+        <p>Base tinctures (Q) used both directly and as the starting point for dilutions.</p>
+      </div>
+      <div class="card">
+        <h3>Biochemics</h3>
+        <p>The BC 1–28 tissue-salt combinations, in tablet form.</p>
+      </div>
+      <div class="card">
+        <h3>Patent &amp; proprietary medicines</h3>
+        <p>Branded combination formulations for common conditions — drops, tonics and tablets.</p>
+      </div>
+      <div class="card">
+        <h3>Ointments &amp; external applications</h3>
+        <p>Topical preparations for skin and external use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brands">
+  <div class="wrap">
+    <h2>Brands we stock</h2>
+    <p class="section-lede">Sourced from established homoeopathic manufacturers.</p>
+    <div class="brands">
+      <span class="brand-chip">Dr. Willmar Schwabe India</span>
+      <span class="brand-chip">SBL</span>
+      <span class="brand-chip">Allen Homoeo &amp; Herbal</span>
+      <span class="brand-chip">Similia</span>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2>Visit or call</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Pharmacy</h3>
+        <div class="contact-row"><span class="k">Address</span><span>24 A West Car Street, Nagercoil – 629001, Tamil Nadu</span></div>
+        <div class="contact-row"><span class="k">Phone</span><a href="tel:+916380816260">+91 63808 16260</a></div>
+        <a class="btn-secondary" style="display:inline-block;margin-top:8px;" href="https://www.google.com/maps/search/?api=1&query=24+A+West+Car+Street%2C+Nagercoil+629001" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="contact-card">
+        <h3>Good to know</h3>
+        <div class="contact-row"><span>Bring your prescription, or ask by remedy name and potency.</span></div>
+        <div class="note">Hours aren't listed yet — call ahead to confirm we're open before visiting.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="legal">
+      <span>GSTIN: 33BBPPS8168A1ZD</span>
+      <span>Drug Licence: TNK/62/20C, TNK/59/20D</span>
+    </div>
+    <div>&copy; <span id="year"></span> Vijayas Healthcare &amp; Medicals, Nagercoil.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
