@@ -79,8 +79,14 @@
     text-decoration:none;font-size:0.9rem;font-weight:600;white-space:nowrap;flex-shrink:0;
   }
   .call-btn:hover{background:var(--brand-dark);}
+  .nav-phone{
+    font-weight:700;font-size:0.95rem;color:var(--ink);text-decoration:none;
+    white-space:nowrap;flex-shrink:0;
+  }
+  .nav-phone:hover{color:var(--brand-dark);}
   @media(max-width:640px){
     .nav-links{display:none;}
+    .nav-phone{display:none;}
     .brand{font-size:0.95rem;}
     .call-btn{padding:8px 14px;font-size:0.85rem;}
   }
@@ -109,6 +115,13 @@
     text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid var(--line);
   }
   .btn-secondary:hover{border-color:var(--brand);}
+  .btn-whatsapp{
+    background:#25D366;color:#fff;padding:12px 22px;border-radius:8px;
+    text-decoration:none;font-weight:600;font-size:0.95rem;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn-whatsapp:hover{background:#1ebe59;}
+  .btn-whatsapp svg{width:18px;height:18px;flex-shrink:0;}
 
   section{padding:44px 0;border-top:1px solid var(--line);}
   section h2{font-size:1.4rem;margin:0 0 8px;}
@@ -161,6 +174,7 @@
       <a href="#stock">What we stock</a>
       <a href="#brands">Brands</a>
     </nav>
+    <a class="nav-phone" href="tel:+916380816260">+91 63808 16260</a>
     <a class="call-btn" href="tel:+916380816260">Call the pharmacy</a>
   </div>
 </header>
@@ -175,7 +189,11 @@
     </p>
     <div class="hero-ctas">
       <a class="btn-primary" href="tel:+916380816260">Call the pharmacy</a>
-      <a class="btn-secondary" href="https://www.google.com/maps/search/?api=1&query=24+A+West+Car+Street%2C+Nagercoil+629001" target="_blank" rel="noopener">Get directions</a>
+      <a class="btn-whatsapp" href="https://wa.me/916380816260" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91S17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 1 1 6.97 3.85zm4.5-6.15c-.25-.12-1.46-.72-1.68-.8-.23-.08-.4-.12-.56.12-.17.25-.64.8-.79.96-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.48-.28z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn-secondary" href="https://maps.app.goo.gl/ZMosWeVw8ojAo6Nw9" target="_blank" rel="noopener">Get directions</a>
     </div>
   </div>
 </div>
@@ -241,7 +259,8 @@
         <h3>Pharmacy</h3>
         <div class="contact-row"><span class="k">Address</span><span>24 A West Car Street, Nagercoil – 629001, Tamil Nadu</span></div>
         <div class="contact-row"><span class="k">Phone</span><a href="tel:+916380816260">+91 63808 16260</a></div>
-        <a class="btn-secondary" style="display:inline-block;margin-top:8px;" href="https://www.google.com/maps/search/?api=1&query=24+A+West+Car+Street%2C+Nagercoil+629001" target="_blank" rel="noopener">Open in Google Maps</a>
+        <div class="contact-row"><span class="k">WhatsApp</span><a href="https://wa.me/916380816260" target="_blank" rel="noopener">Chat with us</a></div>
+        <a class="btn-secondary" style="display:inline-block;margin-top:8px;" href="https://maps.app.goo.gl/ZMosWeVw8ojAo6Nw9" target="_blank" rel="noopener">Open in Google Maps</a>
       </div>
       <div class="contact-card">
         <h3>Good to know</h3>
